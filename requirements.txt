@@ -1,4 +1,5 @@
 django
+gunicorn
 djangorestframework
 drf-yasg
 drf-yasg[validation]
