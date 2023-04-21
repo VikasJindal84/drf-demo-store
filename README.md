@@ -1,18 +1,7 @@
 # drf-demo-store
 This is demo project to show usage of Django REST framework
 
-## ✨ Start the app in Docker
-
-```bash
-$ docker-compose up --build
-```
-
-- http://localhost:5005/api/swagger/ for swagger docs
-- http://localhost:5005/admin for admin portal
-
-<br />
-
-## Manual Build
+## Build
 
 > 👉 Install modules via `VENV`
 
@@ -33,10 +22,10 @@ $ python manage.py migrate
 
 <br />
 
-> 👉 Create app
+> 👉 Create superuser in Django
 
 ```bash
-$ python manage.py startapp app_name
+$ python manage.py createsuperuser
 ```
 
 <br />
@@ -51,5 +40,16 @@ $ python manage.py runserver
 - A swagger-ui view of your API specification at http://127.0.0.1:8000/api/swagger/
 - A ReDoc view of your API specification at http://127.0.0.1:8000/api/redoc/
 - http://127.0.0.1:8000/admin for admin portal
+
+<br />
+
+> 👉 Start the app in Docker
+
+```bash
+$ docker-compose up --build
+```
+
+- http://localhost:5005/api/swagger/ for swagger docs
+- http://localhost:5005/admin for admin portal
 
 <br />
